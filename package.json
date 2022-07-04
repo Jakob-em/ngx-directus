@@ -21,7 +21,7 @@
     "rxjs": "~7.5.5",
     "tslib": "^2.4.0",
     "zone.js": "~0.11.6",
-    "@directus/sdk": "9.13.0"
+    "@directus/sdk": "9.8.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~14.0.4",

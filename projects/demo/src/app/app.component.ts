@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Directus} from '@directus/sdk';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'demo';
+
+  constructor(private directus: Directus<any>) {
+    this.directus.items('products').readByQuery().then(console.log);
+  }
 }
